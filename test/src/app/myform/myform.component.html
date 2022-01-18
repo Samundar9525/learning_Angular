@@ -1,0 +1,52 @@
+<p>myform works!</p>
+<p >I am going to acess Global variable : {{item}} </p>
+<p >I am going to acess Global Func:{{item}}
+<button (click)="addfun.emit(item)"> on click</button>
+
+</p>
+
+<form #form1="ngForm" (ngSubmit)="getData(form1.value)"  >
+
+<!-- <label for="name">Name</label>&nbsp; -->
+<input type="text" ngModel name="username" placeholder="Enter User name">
+<br><br>
+
+<!-- <label for="Stream">Stream</label>&nbsp; -->
+<input type="text" ngModel name="stream" placeholder="Enter Your Stream">
+<br><br>
+
+<!-- <label for="password">Password</label>&nbsp; -->
+<input type="password" ngModel name="password" placeholder="Enter Your Password">
+<br><br>
+
+<button  >SUBMIT</button>
+
+</form>
+<button (click)="show()" >Show</button>
+<h1 *ngIf="showdata" >
+  --------User Info---------
+  <br>
+  Name: {{userdata.username}}
+  <br>
+  Stream: {{userdata.stream}}
+  <br>
+  password  : {{userdata.password}}
+</h1>
+
+
+<ul *ngFor="let user of detail">
+  <li>{{user.name}}</li>
+  <li>{{user.branch}}</li>
+  <li>{{user.Roll}}</li>
+</ul>
+
+<h1>{{"This is 2 way binding demo"|uppercase}}</h1>
+
+<input type="text" [(ngModel)]="myname">
+
+<h3>Hello {{myname}}</h3>
+
+
+<!-- <h4>{{detail |json}}</h4> -->
+<h1>My Unsorted Array :{{arr}}</h1>
+<h1>My __Sorted Array :{{arr|mypipe}}</h1>
