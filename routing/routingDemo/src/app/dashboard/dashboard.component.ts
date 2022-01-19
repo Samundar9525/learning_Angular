@@ -12,7 +12,6 @@ export class DashboardComponent implements OnInit {
   constructor(private usrinfo:UserdataService) {
   this.data=usrinfo.userinfo();
   }
-
   ngOnInit(): void {
   }
 
