@@ -4,15 +4,16 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { NopageComponent } from './nopage/nopage.component';
 
 const routes: Routes = [
 
   {
-    path:"dashboard",
+    path:'dashboard',
     component:DashboardComponent
   },
   {
-    path:"login",
+    path:"login/:id",
     component:LoginComponent
   },
 
@@ -21,8 +22,13 @@ const routes: Routes = [
     component:AboutusComponent
   },
   {
-    path:"/",
+    path:"./",
     component:AppComponent
+  },
+
+  {
+    path:"**",
+    component:NopageComponent
   }
 ];
 
