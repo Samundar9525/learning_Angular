@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
 import { HeaderComponent } from './header/header.component';
-import {HttpClientModule} from "@angular/common/http"
+import {HttpClientModule} from "@angular/common/http";
+import { HomepageComponent } from './homepage/homepage.component';
+import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
+import { FormtoComponent } from './modules/formto/formto.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     UserloginComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomepageComponent,
+    NgrxFormtoComponent,
+    FormtoComponent
   ],
   imports: [
     BrowserModule,
