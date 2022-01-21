@@ -1,0 +1,77 @@
+<div class="my-3 px-4">
+  <h4>of and from usage:</h4>
+  <br />
+  <strong> Ex-01(of)</strong>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-6">
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data :</strong> of("sam","sabbir","miku")
+      </p>
+      <hr />
+      <strong>Stream Data :</strong>
+      <ul id="elcontainer1">
+      </ul>
+    </div>
+
+    <div class="col-md-6">
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data :</strong>of(&#123; a:"anjan",b: "rishab",c: "vishal"&#125;)
+      </p>
+      <hr />
+      <strong>Stream Data :</strong>
+      <ul id="elcontainer2" >
+        <li><strong>a: </strong>{{ usrdata.a}}</li>
+        <li><strong>b: </strong>{{ usrdata.b}}</li>
+        <li><strong>c: </strong>{{ usrdata.c}}</li>
+      </ul>
+    </div>
+
+
+  </div>
+<br>
+  <strong> Ex-02(From)</strong>
+  <hr />
+  <div class="row">
+    <div class="col-md-4">
+      <strong> Array</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data :</strong> from(["tony","peter","kabir"])
+      </p>
+      <hr />
+      <strong>Stream Data :</strong>
+      <ul id="elcontainer3">
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong> Promise</strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data :</strong> Promise to obserable
+      </p>
+      <hr />
+      <strong>Stream Data : data came after 3 sec </strong>
+      <ul id="elcontainer4">
+      </ul>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <strong> String </strong>
+      <hr>
+      <p class="bg-light py-2 px-3 border rounded">
+        <strong>Data :</strong>"Samundar"=>"S","a","m"...."r"
+      </p>
+      <hr />
+      <strong>Stream Data :</strong>
+      <ul id="elcontainer5">
+      </ul>
+    </div>
+
+
+  </div>
+</div>

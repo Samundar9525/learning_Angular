@@ -16,5 +16,13 @@ export class MydataService {
     return this.http.get(this.url);
 }
 
+listappend(valu:string,id:string){
+  let el=document.createElement('li');
+  el.innerText=valu;
+
+  document.getElementById(id)?.appendChild(el);
+  console.log("appended");
+
+}
 
 }

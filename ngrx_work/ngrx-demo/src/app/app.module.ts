@@ -9,7 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import {HttpClientModule} from "@angular/common/http";
 import { HomepageComponent } from './homepage/homepage.component';
 import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
-import { FormtoComponent } from './modules/formto/formto.component'
+import { FormtoComponent } from './modules/formto/formto.component';
+import { IntervalComponent } from './modules/interval/interval.component';
+import { OfFromComponent } from './modules/of-from/of-from.component';
+import { ToarrayComponent } from './modules/toarray/toarray.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { FormtoComponent } from './modules/formto/formto.component'
     HeaderComponent,
     HomepageComponent,
     NgrxFormtoComponent,
-    FormtoComponent
+    FormtoComponent,
+    IntervalComponent,
+    OfFromComponent,
+    ToarrayComponent
   ],
   imports: [
     BrowserModule,
