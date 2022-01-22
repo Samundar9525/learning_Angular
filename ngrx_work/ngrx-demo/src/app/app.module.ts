@@ -12,7 +12,8 @@ import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
 import { FormtoComponent } from './modules/formto/formto.component';
 import { IntervalComponent } from './modules/interval/interval.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
-import { ToarrayComponent } from './modules/toarray/toarray.component'
+import { ToarrayComponent } from './modules/toarray/toarray.component';
+import { CustomObserableComponent } from './custom-obserable/custom-obserable.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { ToarrayComponent } from './modules/toarray/toarray.component'
     FormtoComponent,
     IntervalComponent,
     OfFromComponent,
-    ToarrayComponent
+    ToarrayComponent,
+    CustomObserableComponent
   ],
   imports: [
     BrowserModule,

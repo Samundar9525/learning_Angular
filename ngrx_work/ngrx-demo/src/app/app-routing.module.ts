@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CustomObserableComponent } from './custom-obserable/custom-obserable.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { IntervalComponent } from './modules/interval/interval.component';
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path: "interval",component: IntervalComponent},
   {path: "offrom",component: OfFromComponent},
   {path: "toarray",component: ToarrayComponent},
+  {path: "customovserable",component: CustomObserableComponent},
+
   {path: "**",redirectTo: "homepage"}
 ];
 
