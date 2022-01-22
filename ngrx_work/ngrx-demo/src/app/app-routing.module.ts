@@ -4,6 +4,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { CustomObserableComponent } from './modules/custom-obserable/custom-obserable.component';
 import { IntervalComponent } from './modules/interval/interval.component';
+import { MapComponent } from './modules/map/map.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { NgrxFormtoComponent } from './ngrx-formto/ngrx-formto.component';
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: "offrom",component: OfFromComponent},
   {path: "toarray",component: ToarrayComponent},
   {path: "customovserable",component:CustomObserableComponent},
+  {path: "maps",component:MapComponent},
 
   {path: "**",redirectTo: "homepage"}
 ];
