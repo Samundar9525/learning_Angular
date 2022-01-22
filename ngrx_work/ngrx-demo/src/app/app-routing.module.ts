@@ -1,8 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomObserableComponent } from './custom-obserable/custom-obserable.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
+import { CustomObserableComponent } from './modules/custom-obserable/custom-obserable.component';
 import { IntervalComponent } from './modules/interval/interval.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: "interval",component: IntervalComponent},
   {path: "offrom",component: OfFromComponent},
   {path: "toarray",component: ToarrayComponent},
-  {path: "customovserable",component: CustomObserableComponent},
+  {path: "customovserable",component:CustomObserableComponent},
 
   {path: "**",redirectTo: "homepage"}
 ];

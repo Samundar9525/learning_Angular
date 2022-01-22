@@ -16,7 +16,7 @@ export class MydataService {
     return this.http.get(this.url);
 }
 
-listappend(valu:string,id:string){
+listappend(valu:any,id:string){
   let el=document.createElement('li');
   el.innerText=valu;
 

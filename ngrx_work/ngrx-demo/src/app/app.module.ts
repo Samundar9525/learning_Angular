@@ -13,7 +13,9 @@ import { FormtoComponent } from './modules/formto/formto.component';
 import { IntervalComponent } from './modules/interval/interval.component';
 import { OfFromComponent } from './modules/of-from/of-from.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
-import { CustomObserableComponent } from './custom-obserable/custom-obserable.component'
+import { CommonModule } from '@angular/common';
+import { MapComponent } from './modules/map/map.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +28,14 @@ import { CustomObserableComponent } from './custom-obserable/custom-obserable.co
     IntervalComponent,
     OfFromComponent,
     ToarrayComponent,
-    CustomObserableComponent
+    MapComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

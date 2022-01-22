@@ -1,0 +1,45 @@
+<div class="my-3">
+  <div class="row px-5 px-3">
+
+    <div class="col-md-4">
+      <strong>Ex -02 (Default array)</strong>
+      <hr />
+      <ul class="techlist" >
+        <li>Angular</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Status</li>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex -01 (Manual)</strong>
+      <hr />
+      <ul class="techlist {{ techstatus1 }}" id="custelcontainer1"></ul>
+    </div>
+    <div class="col-md-4">
+      <strong>Ex -02 (Custom interval)</strong>
+      <hr />
+      <ul class="techlist {{ techstatus2 }}" id="custelcontainer2"></ul>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <strong>Ex -03 (Random Names)</strong>
+        <hr />
+        <p class="bg-light py-2 px-3 border rounded">
+          <strong>Random Names :</strong> "sam","sabbir","miku","chickoo","tuni","Anjan","Mukesh","Rishab","Ghanshyam","shubham","Abhijeet"
+        </p>
+        <hr />
+        <p>
+          Current Name : <strong >{{ names }}</strong>
+        </p>
+        <span class="badge {{namestatus}}">{{stat}}</span>
+      </div>
+    </div>
+  </div>
+</div>
