@@ -15,6 +15,7 @@ import { OfFromComponent } from './modules/of-from/of-from.component';
 import { ToarrayComponent } from './modules/toarray/toarray.component';
 import { CommonModule } from '@angular/common';
 import { MapComponent } from './modules/map/map.component';
+import { PluckComponent } from './modules/pluck/pluck.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MapComponent } from './modules/map/map.component';
     OfFromComponent,
     ToarrayComponent,
     MapComponent,
+    PluckComponent,
 
   ],
   imports: [
